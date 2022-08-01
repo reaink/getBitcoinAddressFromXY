@@ -81,10 +81,10 @@ function getBitcoinAddressFromXY(x, y) {
 
   log('')
   const address = base58.encode(Buffer.from(hashHex, 'hex'))
-  log(clk`{green base58check address}`, address)
+  log(clk`{green base58 address}`, address)
   
   const compressedAddress = base58.encode(Buffer.from(compressedHashHex, 'hex'))
-  log(clk`{green compressed base58check address}`, compressedAddress)
+  log(clk`{green compressed base58 address}`, compressedAddress)
 
   return compressedAddress
 }
